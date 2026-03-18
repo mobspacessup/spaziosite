@@ -3,186 +3,68 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Spazio — Проектирование мебели</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-body {
-  font-family: 'Inter', sans-serif;
-  margin: 0;
-  background: #fff;
-  color: #111;
-}
-
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-nav a {
-  margin-left: 20px;
-  color: #666;
-  font-size: 14px;
-}
-
-.hero {
-  text-align: center;
-  padding: 120px 20px;
-}
-
-.hero h1 {
-  font-size: 58px;
-}
-
-.hero p {
-  color: #666;
-  max-width: 600px;
-  margin: auto;
-}
-
-.btn {
-  background: #000;
-  color: #fff;
-  padding: 14px 30px;
-  border-radius: 10px;
-  display: inline-block;
-  margin-top: 20px;
-}
-
-.section {
-  padding: 100px 0;
-}
-
-.grid {
-  display: grid;
-  gap: 20px;
-}
-
-.grid-3 {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
-
-.card {
-  border: 1px solid #eee;
-  padding: 20px;
-  border-radius: 12px;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-}
-
-.project {
-  height: 220px;
-  background: #f2f2f2;
-  border-radius: 10px;
-}
-
-.before-after {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.block {
-  height: 200px;
-  background: #eaeaea;
-  border-radius: 10px;
-}
-
-.dark {
-  background: #000;
-  color: #fff;
-  text-align: center;
-}
-
-input, select {
-  width: 100%;
-  padding: 12px;
-  margin-top: 10px;
-  border: none;
-  border-radius: 8px;
-}
-
-.quiz {
-  max-width: 400px;
-  margin: auto;
-}
-
-footer {
-  text-align: center;
-  padding: 40px;
-  color: #777;
-}
-
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  color: #fff;
-  padding: 15px;
-  border-radius: 50%;
-  font-size: 18px;
-}
-</style>
+<title>Spazio — Проект мебели</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header class="container">
+<header class="container header">
   <h2>SPAZIO</h2>
   <nav>
     <a href="#projects">Проекты</a>
-    <a href="#prices">Цены</a>
+    <a href="#cases">Кейсы</a>
     <a href="#quiz">Расчет</a>
-    <a href="#contacts">Контакты</a>
+    <a href="blog.html">Блог</a>
   </nav>
 </header>
 
 <section class="hero">
-  <h1>Проектирование мебели<br>и интерьеров</h1>
-  <p>Точные проекты без ошибок. Быстро. Понятно для производства.</p>
-  <a href="#quiz" class="btn">Рассчитать проект</a>
-
-  <div style="margin-top:40px;">
-    <b>50+ проектов</b> | <b>7 дней срок</b> | <b>-90% ошибок</b>
-  </div>
+  <h1 class="fade-up">Проект мебели без ошибок</h1>
+  <p class="fade-up delay">Чертежи, которые реально работают на производстве</p>
+  <a href="#quiz" class="btn fade-up delay2">Рассчитать</a>
 </section>
 
 <section id="projects" class="section container">
-  <h2>Проекты</h2>
+  <h2>Что ты получаешь</h2>
   <div class="grid grid-3">
-    <div class="card"><div class="project"></div><p>Кухня</p></div>
-    <div class="card"><div class="project"></div><p>Шкаф</p></div>
-    <div class="card"><div class="project"></div><p>Интерьер</p></div>
+    <div class="card hover">
+      <h3>📐 Чертежи</h3>
+      <p>Полный пакет для производства</p>
+    </div>
+    <div class="card hover">
+      <h3>⚙️ Фурнитура</h3>
+      <p>Blum / DTC</p>
+    </div>
+    <div class="card hover">
+      <h3>💰 Экономия</h3>
+      <p>Без переделок</p>
+    </div>
   </div>
 </section>
 
-<section class="section container">
-  <h2>До / После</h2>
-  <div class="before-after">
-    <div class="block"></div>
-    <div class="block"></div>
-  </div>
-</section>
-
-<section id="prices" class="section container">
-  <h2>Цены</h2>
+<section id="cases" class="section container">
+  <h2>Кейсы</h2>
   <div class="grid grid-3">
-    <div class="card"><h3>Базовый</h3><p>от 70€</p></div>
-    <div class="card"><h3>Стандарт</h3><p>от 150€</p></div>
-    <div class="card"><h3>Премиум</h3><p>от 300€</p></div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f">
+      <p><b>Кухня</b></p>
+      <p>48 м² — 7200 MDL</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf">
+      <p><b>Шкаф</b></p>
+      <p>12 м² — 1800 MDL</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
+      <p><b>Интерьер</b></p>
+      <p>60 м² — 9000 MDL</p>
+    </div>
+
   </div>
 </section>
 
@@ -196,44 +78,15 @@ footer {
       <option>Шкаф</option>
     </select>
 
-    <select id="size">
-      <option>Размер</option>
-      <option>Маленький</option>
-      <option>Средний</option>
-    </select>
+    <input id="area" placeholder="Площадь м²">
+    <input id="phone" placeholder="Телефон">
 
-    <input id="phone" placeholder="Ваш телефон">
-
-    <button class="btn" onclick="send()">Отправить</button>
+    <button class="btn" onclick="send()">Получить расчет</button>
   </div>
 </section>
 
-<section id="contacts" class="section container">
-  <h2>Контакты</h2>
-  <p>📍 Chisinau</p>
-  <p>📞 079199329</p>
-  <p>
-    Telegram: <a href="https://t.me/yourusername">@yourusername</a>
-  </p>
-</section>
+<a class="floating" href="https://t.me/share/url">💬</a>
 
-<a class="whatsapp" href="https://wa.me/37379199329">💬</a>
-
-<footer>
-  © 2026 Spazio
-</footer>
-
-<script>
-function send() {
-  let type = document.getElementById('type').value;
-  let size = document.getElementById('size').value;
-  let phone = document.getElementById('phone').value;
-
-  let text = Заявка SPAZIO:%0AТип: ${type}%0AРазмер: ${size}%0AТелефон: ${phone};
-
-  window.open(`https://t.me/share/url?text=${text}`);
-}
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
