@@ -67,25 +67,36 @@
 
   </div>
 </section>
-
 <section id="quiz" class="section dark">
   <h2>Рассчитать стоимость</h2>
 
-  <div class="quiz">
-    <select id="type">
-      <option>Тип проекта</option>
-      <option>Кухня</option>
-      <option>Шкаф</option>
-    </select>
+  <div class="quiz-box">
 
-    <input id="area" placeholder="Площадь м²">
-    <input id="phone" placeholder="Телефон">
+    <div class="progress">
+      <div class="progress-bar" id="progress"></div>
+    </div>
 
-    <button class="btn" onclick="send()">Получить расчет</button>
+    <div class="step active" data-step="1">
+      <p>Что нужно спроектировать?</p>
+      <button onclick="nextStep(1, 'Кухня')">Кухня</button>
+      <button onclick="nextStep(1, 'Шкаф')">Шкаф</button>
+    </div>
+
+    <div class="step" data-step="2">
+      <p>Площадь (м²)</p>
+      <input id="area" type="number" placeholder="Например: 20">
+      <button onclick="nextStep(2)">Далее</button>
+    </div>
+
+    <div class="step" data-step="3">
+      <p>Ваш телефон</p>
+      <input id="phone" placeholder="Телефон">
+      <div id="priceBox"></div>
+      <button onclick="send()">Получить расчет</button>
+    </div>
+
   </div>
 </section>
-
-<a class="floating" href="https://t.me/share/url">💬</a>
 
 <script src="script.js"></script>
 </body>
